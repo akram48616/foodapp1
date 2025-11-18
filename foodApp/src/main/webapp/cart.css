@@ -1,0 +1,138 @@
+/* Reset and base styles */
+@charset "UTF-8";
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Cart container */
+.cart-container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual cart item */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.cart-item-details p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+/* Quantity controls */
+.quantity-controls {
+  margin-top: 10px;
+}
+
+.quantity-controls form {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.quantity-controls button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.quantity-controls button:hover {
+  background-color: #2980b9;
+}
+
+/* Cart summary */
+.cart-summary {
+  text-align: right;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 2px solid #ccc;
+}
+
+.cart-summary h2 {
+  margin: 0 0 15px;
+  color: #27ae60;
+}
+
+/* Checkout button */
+.checkout-btn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #27ae60;
+}
+
+/* Empty cart message */
+.cart-container p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+}
+.cart-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}

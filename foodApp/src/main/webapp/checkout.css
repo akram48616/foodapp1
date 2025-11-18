@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* Full-page background wrapper */
+.page-bg {
+  background-image: url("images/OIP.jpeg"); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+/* Container with overlay */
+.checkout-container {
+  background-color: rgba(255, 255, 255, 0.95); /* soft white overlay */
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Form Inputs */
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* Buttons */
+.pay-btn,
+.nav-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn {
+  background-color: #2196F3;
+}
+
+.pay-btn:hover {
+  background-color: #388E3C;
+}
+
+.nav-btn:hover {
+  background-color: #1976D2;
+}
+
+/* Button Container */
+.checkout-actions {
+  margin: 20px 0;
+  text-align: center;
+}
+.payment-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.payment-section label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.payment-section select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.place-order-btn {
+  background-color: #18b767;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #149a5a;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+  table, th, td {
+    font-size: 14px;
+  }
+
+  .pay-btn, .nav-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
